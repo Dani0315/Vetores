@@ -1,0 +1,23 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// import org.junit.jupiter.api.Test;
+
+public class Main {
+  public static void main(String[] args) {
+    //Cria um vetor para armazenar os números inteiros
+    int[] vetor = {1,2,3,4,5,6,7,8,9,10};
+    // preencha um vetor com dez números inteiros
+    // int[] vetor = new int[1,2,3,4,5,6,7,8,9,10];
+
+    // calcule e mostre os números primos e suas respectivas posições
+    for (int i = 0; i < vetor.length; i++)
+      
+      
+    System.out.println("Números primos e suas posições:" + vetor[i]);
+  }
+
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
+}

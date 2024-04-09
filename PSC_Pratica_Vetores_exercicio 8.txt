@@ -1,0 +1,51 @@
+// Crie um programa que irá gerar um vetor A com 15 números inteiros e depois crie um vetor B que será a cópia do vetor A de forma reversa.
+
+import java.util.Random;
+public class Main {
+  public static void main(String[] args) {
+
+    // Definindo o tamanho do vetor
+    int tamanho = 15;
+
+    // Criando o vetor A com números aleatórios
+    int[] vetorA = new int[tamanho];
+    Random random = new Random();
+    for (int i = 0; i < tamanho; i++) {
+        vetorA[i] = random.nextInt(100) + 1;
+    }
+
+    // Criando o vetor B vazio
+    int[] vetorB = new int[tamanho];
+
+    // Percorrendo o vetor A de trás para frente
+    for (int i = tamanho - 1, j = 0; i >= 0; i--, j++) {
+        // Adicionando o elemento do vetor A no final do vetor B
+        vetorB[j] = vetorA[i];
+    }
+
+    // Imprimindo o vetor A
+    System.out.println("Vetor A:");
+    for (int i : vetorA) {
+        System.out.print(i + " ");
+    }
+    System.out.println();
+
+    // Imprimindo o vetor B
+    System.out.println("Vetor B:");
+    for (int i : vetorB) {
+        System.out.print(i + " ");
+    }
+      System.out.println();
+    
+
+   
+
+    
+    
+  }
+
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
+}

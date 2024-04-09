@@ -1,0 +1,54 @@
+import java.util.Random;
+public class VetorNumerosAleatorios {
+  public static void main(String[] args) {
+
+     // Declarando e inicializando o vetor
+    int[] vetor = new int[15];
+    
+    // Criando um objeto Random para gerar números aleatórios
+    Random random = new Random();
+
+    // Preenchendo o vetor com números aleatórios entre 1 e 50
+    for (int i = 0; i < vetor.length; i++) {
+      vetor[i] = random.nextInt(50) + 1;
+
+
+    // Imprimindo o vetor
+    System.out.println("Vetor original:");
+      for (int numero : vetor) {
+        System.out.print(numero + " ");
+
+    // Verificando se o número 20 existe no vetor
+        int indice = -1;
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i] == 20) {
+                indice = i;
+                break;
+              
+    // Imprimindo o resultado
+              if (indice != -1) {
+                System.out.println("\nO número 20 está no índice " + indice);
+              } else {
+                System.out.println("\nO número 20 não existe no vetor");
+      
+
+    
+    
+    
+  
+      
+    
+    
+    
+    
+  
+    
+    
+
+  }
+
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
+}

@@ -1,0 +1,55 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// import org.junit.jupiter.api.Test;
+
+public class Main {
+  public static void main(String[] args) {
+    //crie dois vetores de dez elementos numéricos cada um;
+    int[] vetor1 = {1,3,5,7,9,11,13,15,17,19};
+    int[] vetor2 = {2,4,6,8,10,12,14,16,18,20};
+
+    // Preenche o primeiro vetor com dez números inteiros;
+    for (int i = 0; i < vetor1.length; i++);
+    System.out.println(vetor1[i]);
+    
+    // Preenche o segundo vetor com dez números inteiros;
+    for (int i = 0; i < vetor2.length; i++);
+    System.out.println(vetor2[i]);
+
+    // Crie um novo vetor para armazenar o resultado da intercalação;
+    int[] vetorResultante = new int[vetor1.length + vetor2.length];
+
+    //  Intercala os dois vetores
+    int i = 0; j = 0; k = 0;
+    while (i < vetor1.length && j < vetor2.length); {
+      vetorResultante[k++] = vetor1[i++];
+      vetorResultante[k++] = vetor2[j++];
+    }
+        
+
+    // Mostra o vetor resultante
+     System.out.println("Vetor resultante da intercalação:");
+    for (int numero : vetorResultante) {
+      System.out.print(numero + " ");
+      
+    }
+    System.out.println();
+    
+      
+      
+      
+      
+        
+    }
+      
+    
+      
+    
+     
+  }
+
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
+}
